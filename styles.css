@@ -1,0 +1,351 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+
+/* Box Sizing */
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+	background-color: #16202c;
+}
+
+.container {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	color: #ffffff;
+
+}
+
+.left-div {
+	float: left;
+	width: 25%;
+	position: fixed;
+	z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+#main-div {
+	float: left;
+	width: 50%;
+	min-height: 1000px;
+	margin-left: 25%;
+	border-left: 1px solid #38444c;
+	border-right: 1px solid #38444c;
+}
+
+#aside-div {
+	float: left;
+	width: 25%;
+	min-height: 100%;
+}
+
+#direction-bar {
+	position: sticky;
+	top: 0;
+	left: 0;
+	height: 50px;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+
+/* Tweet Box */
+
+.tweet-box {
+	font-size: 1.1em;
+	padding: 10px 20px 30px 20px;
+	border-bottom: 1px solid #38444c;
+}
+
+.handle-box {
+	float: left;
+	text-decoration: none;
+	color: #8294a1;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	padding: 10px 0 10px;
+}
+
+.handle-box:hover {
+	text-decoration: underline;
+}
+
+.time-box {
+	float: right;
+	font-style: italic;
+  margin-top: 12px;
+  color: #8294a1;
+  font-weight: 300;
+}
+
+.hastag{
+	color: #1b95e0;
+}
+
+/* Direction Bar */
+
+#homeback {
+	float: left;
+	text-decoration: none;
+	padding: 12px;
+}
+
+#handleTopName {
+	display: inline-block;
+	margin: 12px;
+	font-size: 1.4em;
+	text-decoration: none;
+}
+
+.btn {
+	float: right;
+	padding: 10px 20px;
+	margin-top: 5px;
+	margin-right: 15px;
+	font-size: 0.9em;
+	letter-spacing: 0.1em;
+	color: #ffffff;
+	background-color: #1da1f2;
+	border: 0;
+	border-radius: 10px;
+	cursor: pointer
+}
+
+.btn:focus {
+	outline:0;
+}
+
+
+/* Navigation */
+.nav-div {
+	font-weight: bold;
+}
+
+.nav-div a {
+	display: table;
+	padding: 10px 35px;
+	color: #ffffff;
+	font-size: 1.4em;
+	text-decoration: none;
+	margin: 15px 0px 15px 15px;
+	border-radius: 15px;
+	background-repeat: no-repeat;
+	background-size: 24px;
+	background-position:30px 10px;
+	padding-left: 70px; 
+}
+
+.nav-div a:hover {
+	color: #1da1f2;
+	background-color: #192d3f;
+}
+
+#home-flat{
+	background-image: url('./assets/images/home-white.png');
+}
+
+#home-flat:hover {
+	background-image: url('./assets/images/home-blue.png');
+}
+
+#notification-flat{
+	background-image: url('./assets/images/notification-white.png');
+}
+
+#notification-flat:hover {
+	background-image: url('./assets/images/notification-blue.png');
+}
+
+#user-flat{
+	background-image: url('./assets/images/user-white.png');
+}
+
+#user-flat:hover {
+	background-image: url('./assets/images/user-blue.png');
+}
+
+#bookmark-flat{
+	background-image: url('./assets/images/bookmark-white.png');
+}
+
+#bookmark-flat:hover {
+	background-image: url('./assets/images/bookmark-blue.png');
+}
+
+/*Trends */
+
+.trend-head {
+	color: #1da1f2;
+	font-weight: bold;
+	font-size: 1.4em;
+	text-align: center;
+	padding: 20px 0;
+}
+
+
+.trend-section:nth-child(odd) {
+	background-color: #1a2734;
+}
+
+.trend-name {
+	font-size: 1.1em;
+	padding-top: 10px;
+	margin: 0px 5px 7px 20px;
+}
+
+.trend-count {
+	color: #8294a1;
+  font-weight: 300;
+  padding-bottom: 15px;
+	margin: 0 5px 0 20px;
+}
+
+
+/* New Tweet */
+
+#new-tweet textarea, .tweet-btn-div {
+	display: block;
+	width: 100%;
+	font-size: 1.2em;
+	color: #ffffff;
+	background-color: #1a2734;
+	padding: 15px 30px;
+	outline: 0;
+	border: 0;
+	border-bottom: 1px solid #38444c;
+}
+
+.tweet-btn-div {
+	padding: 10px 0;
+	border-bottom: 5px solid #38444c;
+}
+
+/* User Name */
+
+#user-name {
+	font-size: 1.5em;
+	font-weight: 300;
+	text-align: center;
+	margin: 0 auto 30px auto;
+	padding: 20px 0;
+	background-color: #1a2734;
+	background-repeat: no-repeat;
+	background-size: 36px;
+	background-position:32px 16px;
+	background-image: url('./assets/images/twitter-logo.png');
+}
+
+#user-name:hover {
+	background-color: #1a2734;
+}
+
+
+
+/* Friend List */
+#friend-div {
+	margin-top: 40px;
+	font-weight: 300;
+}
+
+#friend-div-head {
+	padding: 10px 25px 10px 45px;
+	color: #8294a1;
+	background-color: #1a2734;
+}
+
+#friend-div a {
+	display: table;
+	color: #ffffff;
+	text-decoration: none;
+	margin: 15px 0px 10px 45px;
+	border-bottom: 1px solid #16202c;
+}
+
+#friend-div a:hover {
+	border-bottom: 1px dotted #ffffff;
+}
+
+

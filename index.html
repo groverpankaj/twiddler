@@ -3,10 +3,68 @@
   <head>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
   </head>
   <body>
-    <script>
 
+    <div class="group container">
+
+      <div class="left-div" id="left-div">
+        <div id="user-name">
+
+        </div>
+        
+        <div class="nav-div" id="nav-div">
+          <a  id="home-flat">Home</a>
+          <a id="user-flat">Profile</a>
+          <a  id="notification-flat">Notification</a>
+          <a  id="bookmark-flat">Bookmarks</a>
+
+          
+        </div> <!-- END nav-div  -->
+
+        <div id="friend-div">
+          <div id="friend-div-head">Friend's List</div>
+        </div> <!-- END friend-div -->
+
+      </div> <!-- END left-div -->
+
+      <div id="main-div">
+         <div id="direction-bar">
+          <a href="" id="homeback">Home</a>
+          <a id="handleTopName" href=""></a> 
+          <button onclick="refreshTweet()" id="ref-btn" class="btn">Refresh</button>
+        </div>
+
+        <div id="new-tweet">
+          <textarea rows="3" cols="50" id="user-tweet" placeholder="What's happening" maxlength="140"></textarea>
+          <div class="group tweet-btn-div">
+            <button class="btn" onclick="addUsersTweet()">Tweet</button>
+          </div>
+        </div>
+        
+        <div id="tweet-div">
+        </div>
+
+      </div>   <!-- END main -->
+
+      <div id="aside-div">
+        <section class="trend-head">
+          Trending now
+        </section>
+        <section id='trends'>
+        </section>
+      </div>   <!-- END aside -->
+
+
+    </div> <!-- END container  -->
+    
+
+    <script src="twiddler-script.js"></script>
+
+    <script>
+      /*
       $(document).ready(function(){
         var $body = $('body');
         $body.html('');
@@ -21,7 +79,7 @@
         }
 
       });
-
+*/
     </script>
   </body>
 </html>
